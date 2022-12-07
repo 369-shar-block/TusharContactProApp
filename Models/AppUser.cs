@@ -18,5 +18,11 @@ namespace TusharContactProApp.Models
 
         [NotMapped]
         public string? FullName { get { return $"{FirstName} {LastName}"; } }
+
+
+        //navigation
+        public virtual ICollection<Contact> Contacts { get; set; } = new HashSet<Contact>();
+
+        public virtual ICollection<Category> Categories { get; set; } = new HashSet<Category>();
     }
 }

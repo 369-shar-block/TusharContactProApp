@@ -169,7 +169,7 @@ namespace TusharContactProApp.Areas.Identity.Pages.Account
         {
             try
             {
-                AppUser user = new AppUser();
+                AppUser user = Activator.CreateInstance<AppUser>();
                 user.FirstName= Input.FirstName;
                 user.LastName= Input.LastName;
                 return user;
