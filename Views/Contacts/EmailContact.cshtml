@@ -1,0 +1,34 @@
+﻿@model TusharContactProApp.Models.EmailContactViewModel
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1> Email Contact</h1>
+
+<div>
+    <form asp-action="EmailContact" asp-controller="Contacts" method="post">
+        <input type="hidden" asp-for="@Model.EmailData!.GroupName" />
+        <div class="row">
+            <div class="col-md-12">
+                <label asp-for="@Model.EmailData!.EmailAddress" class="form-label">To: </label>
+                <textarea typeof="email" readonly class="form-control" asp-for="@Model.EmailData!.EmailAddress"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label asp-for="@Model.EmailData!.EmailSubject" class="form-label">Subject:</label>
+                <input type="text" class="form-control" asp-for="@Model.EmailData!.EmailSubject" />
+            </div>
+            <div class="col">
+                <label asp-for="@Model.EmailData!.EmailBody" class="form-label">To: </label>
+                <input type="email" class="form-control" asp-for="@Model.EmailData!.EmailBody" rows="5"/>
+            </div>
+            <div class="col">
+                <input class="btn btn-primary" type="submit"  value="Send"/>
+            </div>
+        </div>
+    </form>
+</div>
