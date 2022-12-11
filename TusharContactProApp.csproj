@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-TusharContactProApp-28abe9a9-6a41-481a-b88e-a8a2316d9997</UserSecretsId>
+	  <InvariantGlobalization>True</InvariantGlobalization>
   </PropertyGroup>
 
   <ItemGroup>
