@@ -48,6 +48,8 @@ namespace TusharContactProApp.Data
             var userManagerSvc = svcProvider.GetRequiredService<UserManager<AppUser>>();
 
             await dbContextSvc.Database.MigrateAsync();
+
+            await SeedDemoUserAsync(userManagerSvc);
         }
 
         private static async Task SeedDemoUserAsync(UserManager<AppUser> userManager)

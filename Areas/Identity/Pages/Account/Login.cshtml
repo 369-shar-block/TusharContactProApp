@@ -5,7 +5,8 @@
     ViewData["Title"] = "Log in";
 }
 
-<div class="row d-flex justify-content-center">
+<div class="row d-flex justify-content-center g-2">
+    <h2 class="text-center">Use a local accont to log in.</h2>
     <div class="col-md-6">
         <section>
             <form id="account" method="post">
@@ -46,6 +47,17 @@
                 </div>
             </form>
         </section>
+        <div class="mb-1 text-center">
+        <form id="account" method="post">
+         <div class="form-group">
+                <div class="row">
+                    <div class="col-12 btn-block">
+                            <button type="submit" style="width:inherit;height:min-content" class="btn btn-outline-primary rounded-pill me-2" name="demoLoginEmail" value="DemoLoginEmail">Demo Login</button>
+                </div>
+                </div>
+            </div>
+        </form>
+    </div>
     </div>
    
 </div>
