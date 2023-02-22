@@ -1,12 +1,12 @@
 :root {
-    --cf-primaryColor: #0869b8;
+   /* --cf-primaryColor: #0869b8;
     --cf-primaryColorDark: #002a4e;
     --cf-primaryColorLight: #edf5fc;
     --cf-secondaryColor: #fff0d9;
     --cf-secondaryColorLight: #FFF8EC;
     --cf-dark-color: #131313;
     --cf-light-gray: #d9d9d9;
-    --cf-light-color: #eeeeee;
+    --cf-light-color: #eeeeee;*/
     --cf-title-font: 'Fira Sans', sans-serif;
     --cf-body-font: 'Roboto', sans-serif;
 }
@@ -14,11 +14,21 @@
 html,
 body {
     height: 100%;
+
+}
+
+.content {
+    flex: 1 0 auto;
+    padding-top: 7.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.navbar-toggler{
+    color:white!important;
+    border-color:yellow;
 }
 
 body {
-    /* fallback for old browsers */
-    background-color: var(--cf-primaryColorLight);
     display: flex;
     flex-direction: column;
     color: var(--cf-dark-color);
@@ -27,29 +37,39 @@ body {
     font-size: 1.2rem;
 }
 
+.footer {
+    flex-shrink: 0;
+    background: #9D50BB; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:azure!important;
+}
+
+
 /*--Button Overrides --*/
 /*-- Button styles override Bootstrap Styles --*/
 .btn-outline-primary {
-    color: var(--cf-dark-color);
-    border-color: var(--cf-primaryColor) !important;
+    color: white;
+    border-color: yellow !important;
+    background-color:rebeccapurple;
 }
 
     .btn-outline-primary:hover,
     .btn-outline-primary:active,
     .btn-outline-primary:focus {
-        border-color: var(--cf-secondaryColor) !important;
-        background-color: var(--cf-primaryColor);
+        border-color: gold !important;
+        background-color: black;
     }
 
 .btn-primary {
-    color: white !important;
-    background-color: var(--cf-primaryColor) !important;
-    border-color: var(--cf-secondary-color);
+    color: black !important;
+    background-color: mediumpurple !important;
+    border-color: purple;
 }
 
     .btn-primary:hover {
         filter: brightness(1.2) !important;
-        border-color: var(--cf-primaryColorDark);
+        border-color: gold;
     }
 
     .btn-primary:active,
@@ -63,7 +83,14 @@ body {
 }
 
 nav {
-    background-color: var(--cf-primaryColorLight)
+    color:white!important;
+    background: #9D50BB; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar{
+    color:white!important;
 }
 
 h1,
@@ -82,18 +109,21 @@ main {
     background-color: var(--cf-primaryColorLight);
 }
 
-.content {
-    flex: 1 0 auto;
-    padding-top: 7.5rem;
-    padding-bottom: 2.5rem;
+#navbar1{
+    color:white!important;
 }
+
+.nav-link{
+    color:white!important;
+}
+
 
 .heroCard {
     min-height: 100%;
 }
 
 .texthighlight {
-    color: var(--cf-primaryColor);
+    color: #3D1766;
 }
 
 .heroTitle {
@@ -127,10 +157,10 @@ main {
 
 .sideNav {
     border-radius: 25px;
-    border-color: var(--cf-light-color);
+    border-color: yellow;
     border-style: solid;
     border-width: 3px;
-    background-color: var(--cf-secondaryColor);
+    background-color: white;
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 1rem;
@@ -156,10 +186,6 @@ main {
     font-size: 3.5rem;
 }
 
-.footer {
-    flex-shrink: 0;
-    background-color: var(--cf-secondaryColor);
-}
 
 .copyright {
     color: var(--cf-primaryColorDark);
@@ -180,8 +206,8 @@ main {
 
 .square-img-container {
     position: relative;
-    background-color: var(--cf-primaryColorLight);
-    border-color: var(--cf-light-gray);
+    /*background-color: var(--cf-primaryColorLight);
+    border-color: var(--cf-light-gray);*/
     border-style: solid;
 }
 

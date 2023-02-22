@@ -4,7 +4,7 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>EDIT CONTACT</h1>
+<h1>CREATE CONTACT</h1>
 <div class="p-3 border border-2 shadow-lg bg-light">
 
     <form asp-action="Create" asp-controller="Contacts" method="post" enctype="multipart/form-data">
@@ -82,9 +82,9 @@
                         <label class="control-label">Choose an Image</label>
                         <input asp-for="ImageFile" class="form-control" accept=".png,.jpeg,.jpg,.gif,.svg" onchange="document.getElementById('contactImage').src = window.URL.createObjectURL(this.files[0])" />
                     </div>
-                    <div class="form-group">
+                    @*<div class="form-group">
                         <img id="contactImage" class="img-fluid" src="~/img/ContactPro.png" />
-                    </div>
+                    </div>*@
                     <div class="col-12 d-flex justify-content-end mt-2">
                         <button type="submit" class="btn btn-lg btn-primary rounded-pill" >Save</button>
                     </div>
